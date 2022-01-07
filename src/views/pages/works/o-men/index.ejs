@@ -1,0 +1,322 @@
+
+<%# ページ固有の変数 %>
+<%
+const localData = {
+	pageTitle: "O-MEN",
+	pageBodyId: "page-work_o-men",
+	toRoot: "./../../" 
+};
+%>
+<%# サイト全体の変数 %>
+<% include(localData.toRoot + "../data/_data"); const globalData = getData(); %>
+<%
+const data = Object.assign(globalData, localData);
+%>
+<% console.log(data); %>
+
+<%- include(data.toRoot + "../partial/_header", {data:data}); %>
+
+
+<header class="hero">
+	<div class="common-container">
+		<h1>O-MEN</h1>
+		<p>感情の表現とプライバシーの保護を両立</p>
+	</div>
+</header>
+
+<section class="section-introduction">
+	<div class="common-container">
+		<header class="section-header">
+			<h2>背景</h2>
+		</header>
+		<section class="section-eraofsns">
+			<div class="common-container">
+
+				<header class="section-header">
+					<h3>一億総SNS時代</h3>
+					<p>みんなSNSをする時代だから必要なもの。</p>
+				</header>
+				<p>老若男女問わず使用するSNS。<br>様々な出来事や考えを共有することで誰しもがエモさを感じています。</p>
+				<div class="l-row">
+					<div class="l-span4">
+						<figure>
+							<img src="<%= data.toRoot %>assets/works/o-men/sns_1.png">
+							<figcaption>たくさんの繋がり</figcaption>
+						</figure>
+					</div>
+					<div class="l-span4">
+						<figure>
+							<img src="<%= data.toRoot %>assets/works/o-men/sns_2.png">
+							<figcaption>流行りのダンス</figcaption>
+						</figure>
+					</div>
+					<div class="l-span4">
+						<figure>
+							<img src="<%= data.toRoot %>assets/works/o-men/sns_1.png">
+							<figcaption>ケーキと一緒に</figcaption>
+						</figure>
+					</div>
+
+				</div>
+
+				<p>ところが……</p>
+
+			</div>
+		</section>
+		<section class="section-mibare">
+
+			<div class="l-mibare">
+				<div class="common-container">
+					<header class="section-header">
+						<h3>身バレや炎上！</h3>
+						<p>そんなの嫌ですよね</p>
+					</header>
+
+					<div class="l-row">
+						<div class="l-span8">
+							<p>この世の中は良い人だけではありません。<br>悪意を持った人がSNSを悪用し、個人情報を特定したり過剰に晒し上げしたりする可能性は大いにあります。<br>実際に被害にあった人は多数存在しますが、相当な悪意を持つ加害者はなかなか逮捕できていません。<br>加害者は自身の個人情報を完全に秘匿しているのです。
+							</p>
+							<p>では、私たちはどのように対策すれば良いのでしょうか。<br>簡単です。私たちも個人情報を秘匿すれば良いのです。
+
+						</div>
+						<div class="l-span4">
+							<!-- <figure>
+								<img src="<%= data.toRoot %>assets/works/o-men/mibare_1.png">
+							</figure> -->
+							<figure>
+								<img src="<%= data.toRoot %>assets/works/o-men/enjou_1.png">
+							</figure>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="common-container">
+				<header class="section-header">
+					<h3>プライバシー保護</h3>
+					<p>個人情報を秘匿すると面白くありません</p>
+				</header>
+				<div class="l-row">
+					<div class="l-span4">
+						<figure>
+							<img src="<%= data.toRoot %>assets/works/o-men/bokashi_1.png">
+							<figcaption>たくさんの繋がり</figcaption>
+						</figure>
+					</div>
+					<div class="l-span4">
+						<figure>
+							<img src="<%= data.toRoot %>assets/works/o-men/bokashi_2.png">
+							<figcaption>流行りのダンス</figcaption>
+						</figure>
+					</div>
+					<div class="l-span4">
+						<figure>
+							<img src="<%= data.toRoot %>assets/works/o-men/bokashi_3.png">
+							<figcaption>ケーキと一緒に</figcaption>
+						</figure>
+					</div>
+				</div>
+				<p>どんな感情をしているのかわからないですよね？</p>
+				<p>身バレや炎上に関するリスクを下げるためには感情の共有を犠牲にしなくてはならない。<br>逆に、感情を共有するためには身バレや炎上に関するリスクを上げなければならない。<br>この2種はトレードオフの関係性なのです。
+				</p>
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/tradeoff_1.png">
+				</figure>
+			</div>
+		</section>
+	</div>
+</section>
+
+<section class="section-purpose">
+	<div class=common-container>
+		<header class="section-header">
+			<h2>目的</h2>
+
+			<p><strong>どのようにすれば顔を出さずに感情を共有できるだろうか？</strong></p>
+		</header>
+		<p>考えました。考えに考え、永遠に近い時間考え続けました。<br>そして、ある答えにたどり着きました。</p>
+	</div>
+</section>
+
+<section class="section-inspiration">
+	<div class=common-container>
+		<header class="section-header">
+			<h2>着想</h2>
+
+			<p>ラブライブの顔隠してるアレ</p>
+		</header>
+		<div class="l-row">
+			<div class="l-span4">
+				<p>これだったら顔を出さずに感情を共有できる！</p>
+			</div>
+			<div class="l-span8">
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/inspiration_1.png">
+				</figure>
+			</div>
+
+
+		</div>
+
+
+	</div>
+</section>
+
+<section class="section-overview">
+	<div class=common-container>
+		<header class="section-header">
+			<h2>できることの概要</h2>
+		</header>
+		<figure>
+			<img src="<%= data.toRoot %>assets/works/o-men/overview_1.png">
+		</figure>
+	</div>
+</section>
+
+<section class="section-facelist">
+	<div class=common-container>
+		<header class="section-header">
+			<h2>顔一覧</h2>
+
+			<p>8種類の顔で感情を表現</p>
+		</header>
+		<div class="l-row">
+			<div class="l-span3">
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/kaomoji_1.png">
+					<figcaption>Neutral<br>真顔</figcaption>
+				</figure>
+			</div>
+			<div class="l-span3">
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/kaomoji_2.png">
+					<figcaption>Disgust<br>うんざり</figcaption>
+				</figure>
+			</div>
+			<div class="l-span3">
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/kaomoji_3.png">
+					<figcaption>Sadness<br>悲しい</figcaption>
+				</figure>
+			</div>
+			<div class="l-span3">
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/kaomoji_4.png">
+					<figcaption>Contempt<br>困惑</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="l-row">
+			<div class="l-span3">
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/kaomoji_5.png">
+					<figcaption>Surprise<br>びっくり</figcaption>
+				</figure>
+			</div>
+			<div class="l-span3">
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/kaomoji_6.png">
+					<figcaption>Fear<br>怖い</figcaption>
+				</figure>
+			</div>
+			<div class="l-span3">
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/kaomoji_7.png">
+					<figcaption>Anger<br>怒り</figcaption>
+				</figure>
+
+			</div>
+			<div class="l-span3">
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/kaomoji_8.png">
+					<figcaption>Happiness<br>うれしい</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-method">
+	<div class=common-container>
+		<header class="section-header">
+			<h2>手法</h2>
+			<p>Face APIを活用</p>
+		</header>
+		<p>Microsoft AzureのCognitive Servicesの一つであるFace APIを活用しました。</p>
+		<p>サーバはWebページを提供しており、ユーザが画像をアップロードできるようになっています。
+			ユーザPCから画像をサーバに送ると、その画像はFace APIで分析されます。
+			分析されると、Face APIから顔の座標や感情などの情報が返ってきます。
+			返ってきた情報をもとに、サーバは画像を加工しWebページに表示します。
+		</p>
+		<figure>
+			<img src="<%= data.toRoot %>assets/works/o-men/system_configuration_1.png">
+		</figure>
+
+	</div>
+</section>
+
+<section class="section-howtouse">
+	<div class=common-container>
+		<header class="section-header">
+			<h2>使い方</h2>
+		</header>
+		<div class="terminal">
+			<pre>
+$ git clone git@github.com:dummy-xxxxxx1234/o-men.git xxx
+$ cd xxx
+$ npm install
+$ npm start
+</pre>
+		</div>
+	</div>
+</section>
+
+<section class="section-example">
+	<div class=common-container>
+		<header class="section-header">
+			<h2>出力例</h2>
+		</header>
+
+
+		<p>表情に合わせて変化</p>
+		<div class="l-row">
+			<div class="l-span6">
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/example_3.png">
+				</figure>
+			</div>
+			<div class="l-span6">
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/example_4.png">
+				</figure>
+			</div>
+		</div>
+
+		<p>複数人にも対応</p>
+		<div class="l-row">
+			<div class="l-span6">
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/example_1.png">
+				</figure>
+			</div>
+			<div class="l-span6">
+				<figure>
+					<img src="<%= data.toRoot %>assets/works/o-men/example_2.png">
+				</figure>
+			</div>
+
+		</div>
+
+		<p>あの謝罪会見も</p>
+		<figure>
+			<img src="<%= data.toRoot %>assets/works/o-men/example_5.png">
+		</figure>
+
+	</div>
+</section>
+
+
+<%- include(data.toRoot + "../partial/_footer", {data:data}); %>

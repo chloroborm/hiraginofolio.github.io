@@ -1,0 +1,29 @@
+
+//globalfooter
+.globalfooter {
+    color: $color-globalfooter-text;
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    z-index: 100;
+    bottom:0;
+    left:0;
+    right:0;
+    .common-container {
+        margin: 0 auto;
+        max-width: 1200px;
+        @media (max-width: 1240px) {
+            margin: 0 20px;
+        }
+        @media (max-width: 576px) {
+            margin: 0 10px;
+        }
+        .common-container {
+            margin: 0 20px;
+        }
+    }
+    
+    .allrights {
+        text-align: center;
+    }
+}

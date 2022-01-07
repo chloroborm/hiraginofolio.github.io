@@ -1,0 +1,85 @@
+<%# ページ固有の変数 %>
+<%
+const localData = {
+	pageTitle: "Works",
+	pageBodyId: "page-work_index",
+	toRoot: "./../" 
+};
+%>
+<%# サイト全体の変数 %>
+<% include(localData.toRoot + "../data/_data"); const globalData = getData(); %>
+<%
+const data = Object.assign(globalData, localData);
+%>
+<% console.log(data); %>
+
+<%- include(data.toRoot + "../partial/_header", {data:data}); %>
+
+<header class="hero">
+	<!-- <div class="hero-image-container">
+		<img src="<%= data.toRoot %>assets/works/hero.png">
+		<div class="hero-background_image-filter" />
+	</div> -->
+	<div class="common-container">
+		<h1>Works</h1>
+	</div>
+</header>
+
+
+
+<section class="sectionxx1">
+	<div class="common-container">
+
+        <figure>
+            <img src="<%= data.toRoot %>assets/works/o-men.png">
+        </figure>
+        <h4>プライバシー保護感情共有システム O-MEN</h4>
+        <p>Azureの勉強として作成しました。感情を表現しつつ顔を隠せるのでプライバシーが守れて安心！</p>
+        <table>
+            <tr>
+                <td>公開日</td>
+                <td>2022/1/1</td>
+            </tr>
+            <tr>
+                <td>使用技術</td>
+                <td>html,css,javascript,python</td>
+            </tr>
+        </table>
+
+        <a class="button-link-arrow" href="o-men">詳細をみる</a>
+       
+        <div class="l-row">
+            <div class="l-span6">
+                <figure>
+                    <img src="<%= data.toRoot %>assets/sample/common_dummy_640x480.png">
+                </figure>
+                
+            </div>
+            <div class="l-span6">
+                <h4>test</h4>
+                <p>dummy</p>
+                <a class="button-link-arrow">詳細をみる</a>
+            </div>
+            
+        </div>
+        <div class="l-row">
+            <div class="l-span6">
+                <figure>
+                    <img src="<%= data.toRoot %>assets/sample/common_dummy_640x480.png">
+                </figure>
+                
+            </div>
+            <div class="l-span6">
+                <h4>test</h4>
+                <p>dummy</p>
+                <a class="button-link-arrow">詳細をみる</a>
+            </div>
+            
+        </div>
+        
+	</div>
+</section>
+
+
+
+<%- include(data.toRoot + "../partial/_footer", {data:data}); %>

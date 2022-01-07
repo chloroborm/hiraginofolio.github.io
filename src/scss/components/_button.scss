@@ -1,0 +1,54 @@
+// buttons
+.button, .button-link-arrow, .button-large{
+    // background-color: $palette-white;
+    display: inline-block;
+    text-align: center;
+    margin: 7px 0;
+    padding: .6rem 1rem;
+    cursor: pointer;
+    line-height: 1.5;
+    font-size: .85rem;
+    overflow: hidden;
+    color: $color-button;
+    text-decoration: none;
+    border: 1px solid $color-button;
+    transition: all .2s;
+    &:hover {
+        background-color: $color-button;
+        color: $palette-white;
+        text-decoration: none;
+        border-color: transparent;
+    }
+}
+
+.button-link-arrow {
+    background-color: $palette-white;
+    position: relative;
+    padding-right: 2.5rem;
+    &::after {
+        /* 三角形 */
+        content: "";
+        border-bottom: 1px solid $color-button;
+        border-right: 1px solid $color-button;
+        display: inline-block;
+        height: 0.5rem;
+        width: 0.5rem;
+
+        /* 配置 */
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translatey(-50%) rotate(-45deg);
+    }
+    &:hover {
+        background-color:  $color-button;
+        color: $palette-white;
+        &::after {
+            border-color: $palette-white;
+        }
+    }
+}
+
+.button-large {
+    padding: .6rem 2rem;
+}

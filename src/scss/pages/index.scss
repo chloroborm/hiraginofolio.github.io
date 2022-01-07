@@ -1,0 +1,69 @@
+// index page
+#page-index{
+    .hero {
+        margin: 0px;
+        background: $palette-white;
+        text-align: center;
+        color: $palette-lampBlack;
+        overflow:hidden;
+        height: 100vh;
+        height: calc(calc( var(--vh, 1vh) * 100) - #{$globalheader-height});
+        .common-container {
+            height: 100%;
+        }   
+        p {
+            text-align: center;
+        }
+    }
+    .hero {
+        background: url(../assets/index_top_hero_background.jpg) no-repeat;
+        // background-size: cover;
+        background-position: center center;
+        background-repeat: repeat;
+        // color: $palette-pearlWhite;
+        .index_top_hero{
+            animation: hurueru 3s infinite;
+            @keyframes hurueru {
+                0% {transform: translate(0px, 0px) rotateZ(-0deg)}
+                33% {transform: translate(0px, 5px) rotateZ(5deg)}
+                66% {transform: translate(14px, 0px) rotateZ(-5deg)}
+                100% {transform: translate(0px, 0px) rotateZ(-0deg)}
+            }
+        }
+        .arrow_box{
+            animation: hurueru_box 2s;
+            @keyframes hurueru_box {
+                0% {transform: translate(0px, -300px) rotateZ(0deg)}
+                15% {transform: translate(0px, -300px) rotateZ(0deg)}
+                100% {transform: translate(0px, 0px) rotateZ(-0deg)}
+            }
+        }
+	}
+
+    section {  // セクション設定
+        background-color: $color-section-bg;
+        margin: 0px;
+        text-align: center;
+        justify-content: center;
+        overflow:hidden;
+        .l-row {
+            justify-content: center;
+        }
+        ul, ol, dl {
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .section-pickup {
+        margin: 0px;
+        background: $palette-charcoalGray;
+        color: $palette-white;
+        overflow:hidden;
+    }
+}
