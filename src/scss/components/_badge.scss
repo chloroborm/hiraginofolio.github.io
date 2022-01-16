@@ -1,0 +1,48 @@
+.badge-1 {
+    border: 1px solid $color-main-text;
+    color: $color-main-text;
+    padding: .2em .5em .2em .7em;
+    letter-spacing: .1em;
+    display: inline-block;
+    font-size: .8rem;
+    margin-top: 10px;
+}
+
+.badge-2{
+    background: rgba(0,0,0,.50);
+    color: $palette-white;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.badge-3 {
+    padding: 3px 6px;
+    margin-right: 8px;
+    margin-left: 1px;
+    font-size: 75%;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 3px #ddd;
+    white-space: nowrap;
+}
+
+.badge-blue{
+    background-color: #6f9ad1;
+}
+.badge-red {
+    background-color: #d37c7c;
+}
+.badge-green{
+    background-color: #9bc268; 
+}
+.badge-orange {
+    background-color: #dea154;
+}
+.badge-yellow {
+    background-color: #e9d641;
+}
+.badge-purple {
+    background-color: #9f83d1;
+}

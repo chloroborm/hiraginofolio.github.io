@@ -1,7 +1,3 @@
-#node_modulesとdest以下は除外
+#node_modulesと.DS_Storeは除外
 *node_modules/
-#*dest/
-package-lock.json
-package.json
-gulpfile.js
-*src/
+.DS_Store

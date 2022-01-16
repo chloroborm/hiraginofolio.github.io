@@ -1,0 +1,18 @@
+.label1{
+    color: #484848;
+    display: inline-block;
+    background: #eaeef1;
+    text-decoration: none;
+    margin: 1em;
+    .left {
+        display: inline-block;
+        background:#1da1f3;
+        color: $palette-white;
+        padding: 0px 5px;
+        
+    }
+    .right {
+        display: inline-block;
+        padding: 0px 5px;
+    }
+}

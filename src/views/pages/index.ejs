@@ -1,0 +1,79 @@
+<%# ページ固有の変数 %>
+<%
+const localData = {
+	pageTitle: "Index",
+	pageBodyId: "page-index",
+	toRoot: "./"
+};
+%>
+<%# サイト全体の変数 %>
+<% include(localData.toRoot + "../data/_data"); const globalData = getData(); %>
+<%
+const data = Object.assign(globalData, localData);
+%>
+<% console.log(data); %>
+
+<%- include(data.toRoot + "../partial/_header", {data:data}); %>
+
+<header class="hero">
+	<div class="common-container">
+		<h1><div class='arrow_box'>portfolio!</div></h1>
+		<img class="index_top_hero" src="<%= data.toRoot %>assets/index_top_hero.png">
+	</div>
+	
+		
+	
+</header>
+
+
+<section class="section-pickup">
+	<div class="common-container">
+		<header class="section-header">
+			<h2>Pick UP</h2>
+		</header>
+		
+		
+		<div class="l-row">
+			<div class="l-span6">
+				<figure>
+					<a href="<%= data.toRoot %>works/o-men"><img src="<%= data.toRoot %>assets/works/o-men.png" loading="lazy"/></a>
+					<figcaption>プライバシー保護感情共有システム O-MEN</figcaption>
+				</figure>
+			</div>
+			<div class="l-span6">
+				<figure>
+					<img src="<%= data.toRoot %>assets/sample/common_dummy_640x480.png" loading="lazy">
+					<figcaption>漫画セリフ自動書き起こしシステム</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-news">
+
+    <div class="common-container">
+		<header class="section-header">
+			<h2>News</h2>
+		</header>
+        <table class="center">
+            <tr>
+                <th>日付</th>
+                <th>内容</th>
+            </tr>
+            <tr>
+                <td>2022/01/08</td>
+                <td>サイトを正式オープンしました。</td>
+            </tr>
+            <tr>
+                <td>2021/12/31</td>
+                <td>サイトを仮オープンしました。</td>
+            </tr>
+        </table>
+		
+    </div>
+
+</section>
+
+
+<%- include(data.toRoot + "../partial/_footer", {data:data}); %>
