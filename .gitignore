@@ -1,3 +1,4 @@
 #node_modulesとdest以下は除外
 *node_modules/
 #*dest/
+package-lock.json
