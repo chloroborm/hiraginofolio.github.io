@@ -25,13 +25,13 @@
             animation: hurueru 3s infinite;
             @keyframes hurueru {
                 0% {transform: translate(0px, 0px) rotateZ(-0deg)}
-                33% {transform: translate(0px, 5px) rotateZ(5deg)}
-                66% {transform: translate(14px, 0px) rotateZ(-5deg)}
+                33% {transform: translate(0px, 3px) rotateZ(3deg)}
+                66% {transform: translate(4px, 0px) rotateZ(-2deg)}
                 100% {transform: translate(0px, 0px) rotateZ(-0deg)}
             }
         }
         .arrow_box{
-            animation: hurueru_box 2s;
+            animation: hurueru_box 1.5s;
             @keyframes hurueru_box {
                 0% {transform: translate(0px, -300px) rotateZ(0deg)}
                 15% {transform: translate(0px, -300px) rotateZ(0deg)}
